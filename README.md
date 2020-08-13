@@ -21,6 +21,11 @@ sudo vim /etc/ssh/sshd_config
     PermitRootLogin no
     PasswordAuthentication no
 ```
+Create `www` user and add it to the sudo group:
+
+```
+usermod -aG sudo username
+```
 
 Restart SSH server, change `www` user password:
 
