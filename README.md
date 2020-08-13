@@ -24,7 +24,8 @@ sudo vim /etc/ssh/sshd_config
 Create `www` user and add it to the sudo group:
 
 ```
-usermod -aG sudo username
+useradd www
+usermod -aG sudo www
 ```
 
 Restart SSH server, change `www` user password:
